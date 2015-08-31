@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
- Hello ${sessionScope.user.firstName}
-Address ${sessionScope.user.address.streetAddress}
- <a href=profile.jsp>Profile</a>
+ Hello ${user.firstName}
+
 </body>
 </html>

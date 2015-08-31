@@ -2,10 +2,21 @@ public class User {
 
 	String firstName, lastName, email;
 
+	
+	private Address address;
+	
 	public User(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public String getFirstName() {

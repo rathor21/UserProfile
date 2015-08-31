@@ -30,7 +30,9 @@ public class UserServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String firstName, lastName, email;
 		HttpSession session = request.getSession();
+		Address address = new Address("7 Diamond Ct", "West Windsor", "NJ", "08550");
 		User user = new User("Sunny","Rathor","sunnyrathor3921@gmail.com");
+		user.setAddress(address);
 		session.setAttribute("user", user);
 		getServletContext().getRequestDispatcher("/user.jsp").forward(request, response);
 	}
